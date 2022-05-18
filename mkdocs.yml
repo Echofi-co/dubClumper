@@ -1,0 +1,55 @@
+site_name: dubClumper Docs
+extra_css: [style.css]
+repo_url: https://github.com/Echofi-co/dubClumper
+site_url: https://koaning.github.io/clumper/
+site_description: An example to better understand python packaging and open sourcing.
+site_author: Rishab and Jin
+use_directory_urls: false
+nav:
+  - Home:
+    - Index: index.md
+  - Guides:
+      - Getting Started: guides/getting-started.md
+      - Common Verbs: guides/verbs.md
+      - About Groups: guides/understanding-groups.md
+      - Merge Verbs: guides/understanding-joins.md
+      - Nested Data: guides/understanding-reshaping.md
+      - Summary Methods: guides/summary-methods.md
+      - FAQ: guides/faq.md
+      - Releases: guides/releases.md
+  - API:
+      - Clumper: api/clumper.md
+      - sequence: api/sequence.md
+  - Examples:
+      - Pytest Reports: examples/pytest.md
+      - Game of Thrones: examples/got.md
+plugins:
+  - mkdocstrings:
+      watch:
+        - clumper
+  - search
+copyright: None
+theme:
+  name: material
+  custom_dir: theme/
+  icon:
+    logo: material/library
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  favicon: logo.png
+  logo: logo-white.png
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: blue
+markdown_extensions:
+  - codehilite
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.highlight:
+      use_pygments: true
+  - toc:
+      permalink: true
